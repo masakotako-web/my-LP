@@ -1,0 +1,116 @@
+:root {
+  --bg-color: #F5F1EA;
+  --bg-button: #EFE8DE; /* ほんのり色づいたボタン背景 */
+  --text-main: #333333;
+  --text-sub: #777777;
+  --accent-color: #A69080;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-family: 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --line-height: 2.1; /* わずかに拡大 */
+
+  /* Spacing */
+  --section-spacing: 120px;
+  --container-width: 800px;
+  --border-radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: var(--section-spacing) 0;
+}
+
+/* Typography styles */
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+p {
+  color: var(--text-main);
+}
+
+.sub-text {
+  color: var(--text-sub);
+  font-size: 0.9rem;
+  line-height: 2.2;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid #999; /* わずかに濃く */
+  background: var(--bg-button); /* 背景をほんのり色付け */
+  color: var(--text-main);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* ごく薄い影 */
+}
+
+.btn:hover {
+  background-color: var(--text-main);
+  color: var(--bg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* ホバー時に少し強める */
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 80px;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自分を守り、いたわる習慣 | 言葉と習慣のはなし</title>
+  <meta name="description" content="忙しい毎日のなかで、自分を守り、いたわるための言葉と習慣を。心が静かに整う時間をお届けします。">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ページ固有の調整 */
+    .first-view {
+      min-height: 70vh; /* 少し短くして次を見やすく */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px 24px 60px; /* 下の余白を調整 */
+      margin-top: -30px; /* 全体を少し上に配置 */
+    }
+
+    .first-view h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      white-space: pre-wrap;
+    }
+
+    .first-view .sub-title {
+      font-size: 1.1rem;
+      color: var(--text-sub);
+    }
+
+    .intro-text {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .intro-text .sub-text {
+      font-size: 1.05rem; /* わずかに大きく */
+      line-height: 2.2; /* 行間をさらに拡大 */
+    }
+
+    .guide-text {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.4);
+      padding: 32px;
+      border-radius: var(--border-radius);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .sns-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .sns-link {
+      color: var(--text-sub);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .sns-link:hover {
+      color: var(--text-main);
+    }
+
+    footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 60px 0 40px;
+    }
+
+    .profile-summary {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      margin-bottom: 24px;
+    }
+    
+    .copyright {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .first-view h1 {
+        font-size: 1.5rem;
+      }
+      .first-view {
+        min-height: 55vh;
+        margin-top: -10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <!-- ① First View -->
+    <section class="first-view fade-up">
+      <h1>自分を守り、いたわる習慣が、<br>生きる力を育てる。</h1>
+      <p class="sub-title">〜誰も教えてくれなかった、言葉と習慣のはなし</p>
+    </section>
+
+    <!-- ② Introduction -->
+    <section id="intro">
+      <div class="intro-text fade-up">
+        <p class="sub-text">
+          これまでの経験や迷いのなかで、<br>
+          「自分を守ること」の大切さを、何度も考えてきました。<br>
+          ここでは、誰かの正解ではなく、<br>
+          あなた自身をいたわるための言葉と習慣を綴っています。
+        </p>
+      </div>
+
+      <!-- ④ Action Guidance -->
+      <div class="fade-up" style="margin-top: 60px;">
+        <p class="guide-text">今のあなたに合うものを、選んでください</p>
+        <!-- ③ Action Buttons -->
+        <div class="actions">
+          <a href="#" class="btn">言葉に触れる</a>
+          <a href="#" class="btn">立ち止まる</a>
+          <a href="#" class="btn">自分に合うものを選ぶ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ Words Preview -->
+    <section id="preview" class="fade-up">
+      <h2 class="text-center">いたわりの断片</h2>
+      <div class="preview-grid">
+        <div class="card">
+          <p>「何もしない」は、<br>積極的な休息です。</p>
+        </div>
+        <div class="card">
+          <p>あなたの代わりは、<br>どこにもいないから。</p>
+        </div>
+        <div class="card">
+          <p>完璧じゃなくていい。<br>今日を終えただけで、100点。</p>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="#" class="sns-link" style="text-decoration: underline;">もっと見る</a>
+      </div>
+    </section>
+
+    <!-- ⑤ SNS Links -->
+    <section id="sns" class="text-center fade-up">
+      <div class="sns-links">
+        <a href="#" class="sns-link">Instagram</a>
+        <a href="#" class="sns-link">note</a>
+        <a href="#" class="sns-link">X</a>
+        <a href="#" class="sns-link">Threads</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ⑥ Footer -->
+  <footer class="fade-up">
+    <div class="container text-center">
+      <div class="profile-summary">
+        <p>自分をいたわる言葉 ｜ 心を整える習慣を提案しています</p>
+      </div>
+      <p class="copyright">&copy; 2026 自分をいたわる言葉. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll Reveal Animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
